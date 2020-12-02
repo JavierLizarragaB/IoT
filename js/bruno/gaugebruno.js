@@ -24,7 +24,7 @@ var opts = {
   
 };
 
-var target = document.getElementById('myGauge'); // your canvas element
+var target = document.getElementById('myGaugeBruno'); // your canvas element
 var gauge = new Gauge(target).setOptions(opts); // create sexy gauge!
 
 gauge.maxValue = 100; // set max gauge value

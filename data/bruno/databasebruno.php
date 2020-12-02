@@ -4,7 +4,7 @@
     $username   = "iotjavo";
     $password   = "Vq5XV9!!O4RQ";
     $dbname     = "iotjavo";
-    $tbname     = "sensor";
+    $tbname     = "sensorBruno";
 
     // Create database connection
     $conn=mysqli_connect($servername,$username,$password,"$dbname");

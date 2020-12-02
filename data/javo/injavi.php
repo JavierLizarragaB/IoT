@@ -1,6 +1,6 @@
 <?php
     // For database connections
-    include_once 'database.php';
+    include_once 'databaseJavier.php';
 
     // http://tc1004b-project-template.gearhostpreview.com/data/in.php?var1=95.23&var2=13.4
 
@@ -14,7 +14,7 @@
     // Only insert, if variables are not empty
     if(isset($var1) || isset($var2)){
         // MySQL injection query
-        $sql = "INSERT INTO $dbname.$tbname (sensor1ValueJE, sensor2ValueJE)
+        $sql = "INSERT INTO $dbname.$tbname (sensor1Value, sensor2Value)
         VALUES ('$var1','$var2')";
         
         // Insert into database

@@ -1,5 +1,5 @@
 // Create Chart with no data
-var ctx = document.getElementById('myChart').getContext('2d');
+var ctx = document.getElementById('myChartNicko').getContext('2d');
 var myChart = new Chart(ctx, {
     type: 'line',
     data: {
@@ -39,7 +39,7 @@ function addData(chart, label, data)
 
 // Plot all the data at the database
 $.ajax(
-    '../data/all.php',
+    '../data/nicko/allnicko.php',
     {
         success: function(data) {
             var jsonData = JSON.parse(data);
@@ -48,8 +48,8 @@ $.ajax(
             var sensorTime ;    // converts timestamp to time (used as label)
             for(row in jsonData){
                 // Extract sensor1Data
-                sensor1Data = jsonData[row]['sensor1ValueJ'];
-                sensor2Data = jsonData[row]['sensor2ValueJ'];
+                sensor1Data = jsonData[row]['sensor1Value'];
+                sensor2Data = jsonData[row]['sensor2Value'];
                 // Extract time from timestamp
                 sensorTime = new Date(jsonData[row]['timestamp']).toLocaleTimeString();
                 // Add data to chart
@@ -67,12 +67,12 @@ $.ajax(
   // Every 0.5s check for new data
   function fetchLastData(){
     $.ajax(
-        '../data/last.php',
+        '../data/nicko/allnicko.php',
         {
             success: function(data) {
                 var jsonData = JSON.parse(data);
-                var sensor1Data = jsonData[0]['sensor1ValueJ']; 
-                var sensor2Data = jsonData[0]['sensor2ValueJ']; 
+                var sensor1Data = jsonData[0]['sensor1Value']; 
+                var sensor2Data = jsonData[0]['sensor2Value']; 
                 var sensorTime = new Date(jsonData[0]['timestamp']).toLocaleTimeString();   
                 /* 
                 Use the last time the sensor was updated, and compare that time with
