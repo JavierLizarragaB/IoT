@@ -67,7 +67,7 @@ $.ajax(
   // Every 0.5s check for new data
   function fetchLastData(){
     $.ajax(
-        '../data/nicko/allnicko.php',
+        '../data/nicko/lastnicko.php',
         {
             success: function(data) {
                 var jsonData = JSON.parse(data);

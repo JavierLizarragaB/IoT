@@ -39,7 +39,7 @@ function addData(chart, label, data)
 
 // Plot all the data at the database
 $.ajax(
-    '../data/bruno/lastbruno.php',
+    '../data/bruno/allbruno.php',
     {
         success: function(data) {
             var jsonData = JSON.parse(data);
