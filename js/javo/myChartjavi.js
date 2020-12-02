@@ -49,7 +49,7 @@ $.ajax(
             for(row in jsonData){
                 // Extract sensor1Data
                 sensor1Data = jsonData[row]['sensor1Value'];
-                sensor2Data = jsonData[row]['sensor2ValueJ'];
+                sensor2Data = jsonData[row]['sensor2Value'];
                 // Extract time from timestamp
                 sensorTime = new Date(jsonData[row]['timestamp']).toLocaleTimeString();
                 // Add data to chart
