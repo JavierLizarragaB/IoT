@@ -2,7 +2,7 @@
     // Database credentials
     $servername = "den1.mysql4.gear.host";
     $username   = "iotjavo";
-    $password   = "	Vq5XV9!!O4RQ";
+    $password   = "Vq5XV9!!O4RQ";
     $dbname     = "iotjavo";
     $tbname     = "sensor";
 
