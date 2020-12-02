@@ -1,6 +1,6 @@
 <?php
     // For database connections
-    include_once 'databasejavier.php';
+    include_once 'databasejavi.php';
 
     // http://tc1004b-project-template.gearhostpreview.com/data/in.php?var1=95.23&var2=13.4
 
