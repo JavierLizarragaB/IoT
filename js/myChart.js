@@ -48,8 +48,8 @@ $.ajax(
             var sensorTime ;    // converts timestamp to time (used as label)
             for(row in jsonData){
                 // Extract sensor1Data
-                sensor1Data = jsonData[row]['sensor1Value'];
-                sensor2Data = jsonData[row]['sensor2Value'];
+                sensor1Data = jsonData[row]['sensor1ValueJ'];
+                sensor2Data = jsonData[row]['sensor2ValueJ'];
                 // Extract time from timestamp
                 sensorTime = new Date(jsonData[row]['timestamp']).toLocaleTimeString();
                 // Add data to chart
@@ -71,8 +71,8 @@ $.ajax(
         {
             success: function(data) {
                 var jsonData = JSON.parse(data);
-                var sensor1Data = jsonData[0]['sensor1Value']; 
-                var sensor2Data = jsonData[0]['sensor2Value']; 
+                var sensor1Data = jsonData[0]['sensor1ValueJ']; 
+                var sensor2Data = jsonData[0]['sensor2ValueJ']; 
                 var sensorTime = new Date(jsonData[0]['timestamp']).toLocaleTimeString();   
                 /* 
                 Use the last time the sensor was updated, and compare that time with
