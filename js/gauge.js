@@ -9,7 +9,7 @@ var opts = {
   },
   staticLabels: {
       font: "10px sans-serif",  // Specifies font
-      labels: [0, 100, 200, 300, 400, 500],  // Print labels at these values
+      labels: [0, 20, 40, 60, 80, 100],  // Print labels at these values
       color: "#000000",  // Optional: Label text color
       fractionDigits: 0  // Optional: Numerical precision. 0=round off.
   },
