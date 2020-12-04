@@ -9,7 +9,7 @@ var opts = {
   },
   staticLabels: {
       font: "10px sans-serif",  // Specifies font
-      labels: [0, 20, 30, 40, 50, 60, 70, 80, 90, 100],  // Print labels at these values
+      labels: [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100],  // Print labels at these values
       color: "#000000",  // Optional: Label text color
       fractionDigits: 0  // Optional: Numerical precision. 0=round off.
   },
@@ -29,4 +29,4 @@ var gauge = new Gauge(target).setOptions(opts); // create sexy gauge!
 
 gauge.maxValue = 100; // set max gauge value
 gauge.setMinValue(0);  // Prefer setter over gauge.minValue = 0
-gauge.animationSpeed = 57; // set animation speed (32 is default value)
+gauge.animationSpeed = 32; // set animation speed (32 is default value)
