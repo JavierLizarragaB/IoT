@@ -20,7 +20,7 @@ var opts = {
   strokeColor: '#E0E0E0',  // to see which ones work best for you
   generateGradient: true,
   highDpiSupport: true,     // High resolution support
-  percentColors: [[0.0, "#a9d7ff" ], [33, "#f9c802"], [66, "#ff0000"]]   // Make color react according to the position of the needle
+  percentColors: [[0.0, "#a9d7ff" ], [3.3, "#f9c802"], [6.6, "#ff0000"]]   // Make color react according to the position of the needle
   
 };
 
