@@ -5,10 +5,10 @@ var myChart = new Chart(ctx, {
     data: {
         labels: [],         // Labels are empty
         datasets: [{
-            label: 'temp [c]',
+            label: 'Temp [C]',
             data: [],       // Data is empty Adding it later, allows to see a pretty animation!
             fill: false,
-            borderColor: 'rgba(255, 99, 132, 1)',     
+            borderColor: '#a90b3b',     
             borderWidth: 1,
             lineTension: 0
         }]
@@ -19,7 +19,7 @@ var myChart = new Chart(ctx, {
         stacked: false,
         title: {
             display: true,
-            text: 'Temperatura'
+            text: '% de Humedad'
         },
         scales: {
         }
