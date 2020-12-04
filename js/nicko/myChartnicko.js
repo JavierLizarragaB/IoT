@@ -8,7 +8,7 @@ var myChart = new Chart(ctx, {
             label: 'Temp [C]',
             data: [],       // Data is empty Adding it later, allows to see a pretty animation!
             fill: false,
-            borderColor: '#a90b3b',     
+            borderColor: '#0271f9',     
             borderWidth: 1,
             lineTension: 0
         }]
